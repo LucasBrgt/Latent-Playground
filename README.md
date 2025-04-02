@@ -21,12 +21,14 @@
 
 ## Prerequisites
 - Ableton Live Suite >= 12.1.1 and MaxMSP >= 9.0.2, it should work with Live 11 and Max 8 but the test has not been done so be sure to look at the Max Console if doing so.
+
 &nbsp;  
 &nbsp;
 &nbsp;  
 &nbsp;
 &nbsp;  
 &nbsp;
+
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
