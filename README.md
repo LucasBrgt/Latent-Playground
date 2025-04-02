@@ -13,7 +13,7 @@
 
 
 ## _Important_ 
-- Be sure to add the path to _externals_ folder to your Max File Prefernces.
+- Be sure to add the path to _externals_ folder to your Max File Preferences.
 - fluid.dataset~ and fluid.mlpregressor~ are wrapped into fluid.lib.manipulation.mxo so you need to open it with Max by double-click or it won't load properly. 
 - The mcs.nn~ object used in this project is a modified one, so use the one provided. 
 - It has been compiled for ARM based Mac, you'll need to get the source code if you want to use it with Intel based Mac or Windows. You can access it here : [mcs.nn_tilde_bending](https://github.com/LucasBrgt/mcs.nn_tilde_bending_MaxMSP)
