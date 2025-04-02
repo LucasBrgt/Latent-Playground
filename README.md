@@ -1,5 +1,5 @@
 # Latent-Playground
-A Max for Live device based on nn~ for real-time latent interaction in Ableton.
+A Max for Live device based on mcs.nn~ for real-time latent interaction in Ableton.
 
 
 
