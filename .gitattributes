@@ -1,3 +1,4 @@
 mc.nn~.mxo filter=lfs diff=lfs merge=lfs -text
 mcs.nn~.mxo filter=lfs diff=lfs merge=lfs -text
 *.dylib filter=lfs diff=lfs merge=lfs -text
+*.mxo filter=lfs diff=lfs merge=lfs -text
