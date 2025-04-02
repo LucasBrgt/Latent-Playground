@@ -5,7 +5,7 @@
 
 - Use it to manipulate latent variables by create repetitive trajectories with seed based noises like perlin, voronoi, fractal or simplex.
 
-![png#2](/assets/Manipulation.png) 
+<img src="/assets/Manipulation.png" width="500">
 
 - Recover weights of the neural network and bend it by drawing or generating classical distributions that share the same statistics.
 
