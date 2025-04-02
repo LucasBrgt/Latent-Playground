@@ -1,8 +1,15 @@
 # Latent-Playground
 - A Max for Live device based on **mcs.nn~** for real-time latent interaction in Ableton.
-- Use it to manipulate latent variables by create repetitive trajectories with seed based noises like perlin, voronoi, fractal or simplex. Recover weights of the neural network and bend it by drawing or generating classical distributions that share the same statistics.
 
-![png1](/assets/Bending.png)  
+![png#1](/assets/Core.png)  
+
+- Use it to manipulate latent variables by create repetitive trajectories with seed based noises like perlin, voronoi, fractal or simplex.
+
+![png#2](/assets/Manipulation.png) 
+
+- Recover weights of the neural network and bend it by drawing or generating classical distributions that share the same statistics.
+
+![png#3](/assets/Bending.png)  
 
 
 ## Important 
