@@ -1,6 +1,6 @@
 # Latent-Playground
 A Max for Live device based on mcs.nn~ for real-time latent interaction in Ableton.
-
+Be sure to keep the folder structure intact to ensure correct loading. The mcs.nn~ object used in this project is a modified one, so be sure also to use the one provided. It has been compiled for ARM based Mac, you'll need to get the source code if you want to use it with Intel ARM Mac or Windows.
 
 
 
