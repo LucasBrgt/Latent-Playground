@@ -2,7 +2,7 @@
 - A Max for Live device based on **mcs.nn~** for real-time latent interaction in Ableton.
 - Use it to manipulate latent variables by create repetitive trajectories with seed based noises like perlin, voronoi, fractal or simplex. Recover weights of the neural network and bend it by drawing or generating classical distributions that share the same statistics.
 
-(assets/bending.png)  
+(/assets/bending.png)  
 
 
 ## Important 
