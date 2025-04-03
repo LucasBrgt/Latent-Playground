@@ -9,7 +9,7 @@
 
 - Map latent controls to a 2D space with _fluid.mlpregressor~_, a multi-layer perceptron, to create some order out of chaos.
 
-<img src="/assets/Control.png" width="500">
+<img src="/assets/Control.png" width="400">
 
 - Recover weights of the neural network and bend it by drawing or generating classical distributions that share the same statistics.
 
@@ -17,7 +17,7 @@
 
 - All parameters can be automated and stored. 
 
-<img src="/assets/Automations.png">
+<img src="/assets/Automations.png" width="400">
 
 
 ## _Important_ 
