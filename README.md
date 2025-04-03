@@ -17,7 +17,7 @@
 
 - All parameters can be automated and stored. 
 
-<img src="/assets/Automations.png" width="400">
+<img src="/assets/Automations.png" width="460">
 
 
 ## _Important_ 
