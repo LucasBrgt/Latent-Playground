@@ -29,6 +29,10 @@
 
 ## _Prerequisites_
 - Ableton Live Suite >= 12.1.1 and MaxMSP >= 9.0.2, it should work with Live 11 and Max 8 but it has not been tested so be sure to look at the Max Console if doing so.
+
+## _Known issue_
+- If you edit the device in max and load a model while editing, you should know that Ableton will crash if you attempt to destroy the device in Ableton while Max is opened. Closing Max before destroying the device is a good practice. 
+
 &nbsp;  
 &nbsp;
 &nbsp;  
