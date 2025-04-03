@@ -13,7 +13,7 @@
 
 - Recover weights of the neural network and bend it by drawing or generating classical distributions that share the same statistics.
 
-<img src="/assets/Bending.png">
+<img src="/assets/Bending.png" width="600">
 
 - All parameters can be automated and stored. 
 
