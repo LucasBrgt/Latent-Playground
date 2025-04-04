@@ -11,7 +11,7 @@
 
 <img src="/assets/Control.png" width="360">
 
-- Recover weights of the neural network and bend it by drawing or generating classical distributions that share the same statistics.
+- Recover weights of the neural network and bend them by drawing or generating classical distributions that share the same statistics.
 
 <img src="/assets/Bending.png" width="600">
 
@@ -22,16 +22,16 @@
 
 ## _Important_ 
 - Be sure to add the path to _externals_ folder to your Max File Preferences.
-- fluid.dataset~ and fluid.mlpregressor~ are wrapped into fluid.lib.manipulation.mxo so you need to open it with Max by double-click or it won't load properly. 
-- The mcs.nn~ object used in this project is a modified one, so use the one provided. 
-- It has been compiled for ARM based Mac, you'll need to get the source code if you want to use it with Intel based Mac or Windows. You can access it here : [mcs.nn_tilde_bending](https://github.com/LucasBrgt/mcs.nn_tilde_bending_MaxMSP)
+- fluid.dataset~ and fluid.mlpregressor~ are wrapped into fluid.lib.manipulation.mxo so you need to open it with Max before using the device (just double-click on it in the Finder) or it won't load properly. 
+- The mcs.nn~ object used in this project is a modified one, so use the one provided or it will crash. Be careful to momentarily disable access to the official mcs.nn~ object if you're using it already. 
+- It has been compiled for ARM based Mac, you'll need to get the source code if you want to use it with Intel based Mac or Windows. You can access it here : [mcs.nn_tilde_bending](https://github.com/LucasBrgt/mcs.nn_tilde_bending_MaxMSP).
 
 
 ## _Prerequisites_
 - Ableton Live Suite >= 12.1.1 and MaxMSP >= 9.0.2, it should work with Live 11 and Max 8 but it has not been tested so be sure to look at the Max Console if doing so.
 
 ## _Known issue_
-- If you edit the device in max and load a model while editing, you should know that Ableton will crash if you attempt to destroy the device in Ableton while Max is opened. Closing Max before destroying the device is a good practice. 
+- If you edit the device in max and load a model while editing, you should know that Ableton will crash if you attempt to destroy the device in Ableton while Max is opened. This is certainly due to a conflict with detached threads but I never found the solution. Workaround => closing Max before destroying the device is a good practice. 
 
 &nbsp;  
 &nbsp;
