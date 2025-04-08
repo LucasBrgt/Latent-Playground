@@ -20,11 +20,19 @@
 <img src="/assets/Automations.png" width="460">
 
 
+## _Installation_
+
+1. Download source code and _mcs.nn~_ from latest release
+2. Unzip all and move _mcs.nn~_ to externals in _Latent-Playground_ main folder
+3. Add externals to your Max Filepath
+4. Open _fluid.lib.manipulation.mxo_ in Max 
+5. Add the _.amxd_ device to your track
+
+
 ## _Important_ 
-- Be sure to add the path to _externals_ folder to your Max File Preferences.
 - fluid.dataset~ and fluid.mlpregressor~ are wrapped into fluid.lib.manipulation.mxo so you need to open it with Max before using the device (just double-click on it in the Finder) or it won't load properly. 
 - The mcs.nn~ object used in this project is a modified one, so use the one provided or it will crash. Be careful to momentarily disable access to the official mcs.nn~ object if you're using it already. 
-- It has been compiled for ARM based Mac, you'll need to get the source code if you want to use it with Intel based Mac or Windows. You can access it here : [mcs.nn_tilde_bending](https://github.com/LucasBrgt/mcs.nn_tilde_bending_MaxMSP).
+- It has been compiled for Mac, you'll need to get the source code if you want to use it with Windows. You can access it here : [mcs.nn_tilde_bending](https://github.com/LucasBrgt/mcs.nn_tilde_bending_MaxMSP).
 
 
 ## _Prerequisites_
