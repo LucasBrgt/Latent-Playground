@@ -9,9 +9,9 @@ var snapshotInterval = 50;
 var task = null;
 var startTime = null;
 var savePath = null;
-var oscEnabled = false;
+var oscEnabled = true;
 var saveEnabled = true;
-var dictEnabled = false;
+var dictEnabled = true;
 var targetDeviceName = "Latent-Playground";
 
 function anything() {
@@ -156,7 +156,7 @@ function takeSnapshot() {
 			for (var key in changed) {
     			(function(k, v) {
         			var sendTask = new Task(function () {
-            		outlet(1, "/param/" + k, v);
+						outlet(1, "/param/" + k, v);
         		}, this);
         		sendTask.schedule(delay);
     		})(key, changed[key]);
