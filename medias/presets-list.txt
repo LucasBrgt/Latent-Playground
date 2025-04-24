@@ -1,4 +1,0 @@
-1 0 PRESETS  ,
-1 1 percussion  ,
-1 2 vintage  ,
-1 1 percussion  ,

@@ -19,9 +19,10 @@ function anything() {
         savePath = arrayfromargs(arguments).join(" ");
         reset();
         findTargetDevice();
+        scanParameters();
+        saveInitialSnapshot();
         if (device && device.id !== 0) {
             scanParameters();
-            saveInitialSnapshot();
     	var statusDict = new Dict();
     	statusDict.replace("status", "init\n");
     	statusDict.replace("device", targetDeviceName, "\n");
@@ -120,6 +121,9 @@ function saveInitialSnapshot() {
 	for (var key in observed) {
     	snapshots["0.000"][key] = observed[key].value;
 	}
+    var f = new File(savePath, "write", "TEXT");
+    f.writeline(JSON.stringify(snapshots, null, 2)); 
+    f.close();
 }
 
 function startRecording() {
