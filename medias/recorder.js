@@ -25,8 +25,7 @@ function anything() {
             scanParameters();
     	var statusDict = new Dict();
     	statusDict.replace("status", "init\n");
-    	statusDict.replace("device", targetDeviceName, "\n");
-    	statusDict.replace("savePath", savePath);
+    	statusDict.replace(targetDeviceName, "\n");
     	outlet(0, "dictionary", statusDict.name, "\n");
         }
     } else if (messagename === "start") {
