@@ -60,6 +60,7 @@ function findTargetDevice() {
     var this_id = thisDev.id;
     var liveSet = new LiveAPI("live_set");
     var trackCount = liveSet.getcount("tracks");
+    var targetRegex = new RegExp("^" + targetDeviceName + "(\\.v[0-9a-zA-Z._-]+)?$", "i");
 
     for (var t = 0; t < trackCount; t++) {
         var trackPath = "live_set tracks " + t;
@@ -74,10 +75,7 @@ function findTargetDevice() {
                     var path = trackPath + " devices " + i;
                     var target = new LiveAPI(path);
                     var name = target.get("name");
-                    if (
-                        name &&
-                        name.toString().trim().toLowerCase() === targetDeviceName.toLowerCase()
-                    ) {
+                    if (name && targetRegex.test(name.toString().trim())) {
                         device = target;
                         return;
                     }

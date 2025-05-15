@@ -28,6 +28,8 @@ function list() {
         seed = arguments[8];
         size = arguments[9];
 		desordre = arguments[10];
+		maxIn = arguments[11];
+		minIn = arguments[12];
     }
 }
 
