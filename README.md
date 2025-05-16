@@ -32,7 +32,8 @@
 ## _Important_ 
 - fluid.dataset~ and fluid.mlpregressor~ are wrapped into fluid.lib.manipulation.mxo so you need to open it with Max before using the device (just double-click on it in the Finder) or it won't load properly. 
 - The mcs.nn~ object used in this project is a modified one, so use the one provided or it will crash. Be careful to momentarily disable access to the official mcs.nn~ object if you're using it already. 
-- It has been compiled for Mac, you'll need to get the source code if you want to use it with Windows. You can access it here : [mcs.nn_tilde_bending](https://github.com/LucasBrgt/mcs.nn_tilde_bending_MaxMSP).
+- For Windows users, copy all .dll and .lib from mcs.nn~ to the installation path of Max.
+- You can use the source code if you want to compile on your own. You can access it here : [mcs.nn_tilde_bending](https://github.com/LucasBrgt/mcs.nn_tilde_bending_MaxMSP).
 
 
 ## _Prerequisites_
