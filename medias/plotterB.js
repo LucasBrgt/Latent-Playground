@@ -3,8 +3,8 @@ mgraphics.init();
 mgraphics.relative_coords = 1;
 mgraphics.autofill = 0;
 
-inlets = 1;
-outlets = 0;
+inlets = 2; // 1 pour les commandes, 2 pour [x, y]
+outlets = 1; // Renvoie l'ID du point le plus proche
 
 var points = {};
 var pointColors = {};
@@ -14,6 +14,7 @@ var defaultSize = 0.7;
 var _xmin = 0, _xmax = 1, _ymin = 0, _ymax = 1;
 var _bgcolor = [0, 0, 0, 0];
 var _render_scale = 0.9;
+var _detection_margin = 0.03;
 
 render_scale(_render_scale);
 
@@ -38,7 +39,6 @@ function paint() {
         var color = pointColors[id] || defaultColor;
 
         var psize = size * 0.075;
-
         var cx = scale(pt.x, _xmin, _xmax, -1, 1);
         var cy = scale(pt.y, _ymin, _ymax, -1, 1);
 
@@ -48,7 +48,34 @@ function paint() {
     }
 }
 
+// Inlet 1: coordonnées [x, y] (normalisées 0-1)
+function list() {
+    if (inlet !== 1) return;
 
+    var args = arrayfromargs(arguments);
+    if (args.length < 2) return;
+
+    var rx = args[0];
+    var ry = args[1];
+
+    var closest_id = null;
+    var closest_dist = Infinity;
+
+    for (var id in points) {
+        var pt = points[id];
+        var dx = pt.x - rx;
+        var dy = pt.y - ry;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < _detection_margin && dist < closest_dist) {
+            closest_dist = dist;
+            closest_id = id;
+        }
+    }
+
+    if (closest_id !== null) {
+        outlet(0, closest_id);
+    }
+}
 
 function set() {
     var args = arrayfromargs(arguments);
@@ -81,9 +108,8 @@ function clear() {
 }
 
 function scale(v, inMin, inMax, outMin, outMax) {
-    return ((v - inMin) / (inMax - inMin)) * (outMax - outMin) + outMin;
+    return ((v - inMin) / (inMin === inMax ? 1 : inMax - inMin)) * (outMax - outMin) + outMin;
 }
-
 
 function bgcolor(r, g, b, a) {
     _bgcolor = [r, g, b, a];
