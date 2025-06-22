@@ -399,10 +399,11 @@ function ondrag(x,y, button, mod1, shift, capslock, option, mod2) {
 	else if (y>height) y = height;
 	
 	w = sketch.screentoworld(x,y);
-	vx = x / width;
-	vy = 1- y/height;
-	vx = scale(vx, 0, 1, _xmin, _xmax);
-	vy = scale(vy, 0, 1, _ymin, _ymax);
+	var px = scale(x / width, 0, 1, -1, 1);
+	var py = scale(1 - y / height, 0, 1, -1, 1);
+	vx = scale(px, -1, 1, _xmin, _xmax);
+	vy = scale(py, -1, 1, _ymin, _ymax);
+
 	mgraphics.redraw();
 	if (!button && option) {
 		const _new_xmin = scale(boxarea[0], -1, 1, _xmin, _xmax);
