@@ -5,7 +5,7 @@
 
 - Manipulate latent variables by creating repetitive trajectories with seed based noises like perlin, voronoi, fractal or simplex.
 
-<img src="/assets/Manipulation.png">
+<img src="/assets/Modulators.png">
 
 - Map latent controls to a 2D space with _fluid.mlpregressor~_, a multi-layer perceptron, to create some order out of chaos.
 
