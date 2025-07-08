@@ -13,7 +13,7 @@
 
 - Map latent controls to a 2D space with _fluid.mlpregressor~_, a multi-layer perceptron, to create some order out of chaos. 
 
-<img src="assets/Control.gif">
+<img src="assets/Control.gif" width="5%">
   
 
 
