@@ -1,7 +1,7 @@
 # _Latent-Playground_
 - A Max for Live device based on **mcs.nn~** for real-time latent interaction in Ableton.
 
-![assets/Load.gif](https://github.com/LucasBrgt/Latent-Playground/blob/fa8e8231fe908b56a6abe73a9190c31fb2a81c01/assets/Load.gif)
+![assets/Load.gif](https://github.com/LucasBrgt/Latent-Playground/assets/Load.gif)
 
 - Manipulate latent variables by creating repetitive trajectories with seed based noises like perlin, voronoi, fractal or simplex.
 
@@ -9,11 +9,11 @@
 
 - Map latent controls to a 2D space with _fluid.mlpregressor~_, a multi-layer perceptron, to create some order out of chaos.
 
-![assets/Control.gif] (https://github.com/LucasBrgt/Latent-Playground/blob/b849de3edec4a3fd237214b6f6ed173252ccb8d7/assets/Control.gif)
+![assets/Control.gif] (https://github.com/LucasBrgt/Latent-Playground/Control.gif)
 
 - Recover weights of the neural network and bend them by drawing or generating classical distributions that share the same statistics.
 
-![assets/Bending.gif] (https://github.com/LucasBrgt/Latent-Playground/blob/b849de3edec4a3fd237214b6f6ed173252ccb8d7/assets/Bending.gif)
+![assets/Bending.gif] (https://github.com/LucasBrgt/Latent-Playground/assets/Bending.gif)
 
 - All parameters can be automated and stored. 
 
