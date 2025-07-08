@@ -1,7 +1,7 @@
 # _Latent-Playground_
 - A Max for Live device based on **mcs.nn~** for real-time latent interaction in Ableton.
 
-<img src="assets/Load.gif" width="300">  
+<img src="assets/Load.gif" width="300"><br>  
 
 - Manipulate latent variables by creating repetitive trajectories with seed based noises like perlin, voronoi, fractal or simplex. 
 
