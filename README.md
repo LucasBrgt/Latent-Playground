@@ -9,11 +9,11 @@
 
 - Map latent controls to a 2D space with _fluid.mlpregressor~_, a multi-layer perceptron, to create some order out of chaos.
 
-![] (https://github.com/LucasBrgt/Latent-Playground/blob/b849de3edec4a3fd237214b6f6ed173252ccb8d7/assets/Control.gif)
+![assets/Control.gif] (https://github.com/LucasBrgt/Latent-Playground/blob/b849de3edec4a3fd237214b6f6ed173252ccb8d7/assets/Control.gif)
 
 - Recover weights of the neural network and bend them by drawing or generating classical distributions that share the same statistics.
 
-![] (https://github.com/LucasBrgt/Latent-Playground/blob/b849de3edec4a3fd237214b6f6ed173252ccb8d7/assets/Bending.gif)
+![assets/Bending.gif] (https://github.com/LucasBrgt/Latent-Playground/blob/b849de3edec4a3fd237214b6f6ed173252ccb8d7/assets/Bending.gif)
 
 - All parameters can be automated and stored. 
 
